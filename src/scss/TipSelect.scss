@@ -1,0 +1,14 @@
+
+/* Tips */
+.tip {
+    h4 {
+        font-family: 'Space Mono';
+        color: $grayish-cyan;
+    }
+
+    .tips {
+        display: grid;
+        gap: 15px;    
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

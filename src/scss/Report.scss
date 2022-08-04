@@ -1,0 +1,25 @@
+
+@import './variables.scss';
+
+/* Report */
+.report {
+    align-items: stretch;
+    display: flex;
+    font-family: 'Space Mono';
+    justify-content: space-between;
+
+    label {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 { color: $white; }
+        p { color: $grayish-cyan; }
+    }
+
+    strong {
+        font-size: 35px;
+        color: $strong-cyan;
+        small { font-size: 30px; }
+    }
+}

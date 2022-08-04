@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+/* Button */
+.button {
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Space Mono';
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    user-select: none;
+    width: 100%;
+
+    &[data-type = 'reset'] {
+        background-color: $strong-cyan;
+        color: $very-dark-cyan;
+        transition: background-color .2s,  transform .1s;
+
+        &:hover { background-color: $light-grayish-cyan; }
+        &:active { transform: scale(0.95); }
+    }
+
+    &[data-type = 'tip'] {
+        background-color: $very-dark-cyan;
+        color: $white;
+        transition: background-color .1s;
+
+        &:hover { background-color: hsl(183, 99%, 30%); }
+        &.active {
+            background-color: $strong-cyan;
+            color: $very-dark-cyan;
+        }
+    }
+}
+

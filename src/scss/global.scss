@@ -1,0 +1,82 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type = 'number'] {
+    -moz-appearance: textfield;
+}
+
+#root {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+#root::before {
+    background-image: url(../assets/img/root-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    filter: brightness(0.7);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%;
+}
+
+/* Tip Calculator App */
+.tip-calculator-app {
+    align-items: center;
+    background-color: $light-grayish-cyan;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    max-height: 1000px;
+    max-width: 1500px;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form, Result */
+.form, .result {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px;
+}
+
+/* Result */
+.result {
+    background-color: $very-dark-cyan;
+    border-radius: $border-radius;
+    padding: 25px 30px;
+    width: 100%;
+}
+
+@import './Card.scss';
+@import './Input.scss';
+@import './Button.scss';
+@import './Fieldset.scss';
+@import './Report.scss';
+@import './TipSelect.scss';

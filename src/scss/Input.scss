@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+/* Input */
+.input {
+    align-items: center;
+    background-color: $very-light-grayish-cyan;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+
+    input {
+        background-color: transparent;
+        border: none;
+        color: $very-dark-cyan;
+        font-family: 'Space Mono';
+        font-size: 20px;
+        font-weight: 700;
+        outline: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    &.focus {
+        outline: $strong-cyan solid 2px;
+    }
+
+    &[data-error = 'true'] {
+        outline: $error solid 2px;
+    }
+
+    &[data-icon = 'true'] {
+        height: 50px;
+        justify-content: space-between;
+
+        i {
+            align-items: center;
+            color: $grayish-cyan;
+            display: flex;
+            justify-content: center;
+            margin-left: 15px;
+        }
+
+        input {
+            font-size: 23px;
+            margin-right: 15px;
+            text-align: end;
+            width: 70%;
+        }
+    }
+}
